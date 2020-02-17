@@ -8,23 +8,23 @@
 
 import UIKit
 
-class SearchButton: UIViewController {
+class SearchButton: UIButton {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    override init(frame: CGRect) {
+       super.init(frame: frame)
+       setup()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
-    */
+    
+    func setup() {
+        backgroundColor = .darkGray
+        setTitle("Search", for: .normal)
+        layer.cornerRadius = 4
+        titleLabel?.font = .systemFont(ofSize: 14)
+        translatesAutoresizingMaskIntoConstraints = false
+   }
 
 }

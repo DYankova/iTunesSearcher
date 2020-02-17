@@ -8,14 +8,36 @@
 
 import UIKit
 
-class CustomImageView: UIView {
+class CustomImageView: UIImageView {
+    
+    var imageUrlString: String?
+    let images = NSCache<AnyObject, AnyObject>()
+    
+    func loadImage(urlString: String) {
+        imageUrlString = urlString
+        if imageUrlString == "" { return }
+        let url = URL(string: urlString)
+        let request = URLRequest(url: url!)
+        
+        image = nil
+        if let imageFromCache = images.object(forKey: urlString as AnyObject) {
+            self.image = imageFromCache as? UIImage
+            return
+        }
+        
+        URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
+            if error != nil {
+                return
+            }
+                DispatchQueue.main.async {
+                    let imageToCache = UIImage(data: data!)
+                    if self.imageUrlString == urlString {
+                        self.image = imageToCache
+                    }
+                    self.images.setObject(imageToCache!, forKey: urlString as AnyObject)
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+                }
+            }.resume()
+        }
+    
 }

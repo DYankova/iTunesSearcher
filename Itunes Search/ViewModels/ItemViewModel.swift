@@ -7,24 +7,32 @@
 //
 
 import UIKit
+import Foundation
 
-class ItemViewModel: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class ItemViewModel  {
+       
+    let item: ItemModel
+    
+    init(_ item: ItemModel) {
+        self.item = item
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    var name: String {
+        item.name
     }
-    */
+    var text : String {
+        return "Name: " + name + " \nType: " + item.kind + " \nArtist: " + item.artist
+    }
+    
+    var imageView = CustomImageView()
+
+    var url: String {
+       return item.url
+    }
+    
+    var previewLink: NSAttributedString {
+        let attributedString = NSMutableAttributedString(string: url, attributes:[NSAttributedString.Key.link: URL(string: url)])
+        return attributedString
+    }
 
 }

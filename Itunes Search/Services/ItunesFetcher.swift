@@ -12,7 +12,7 @@ class ItunesFetcher: UIViewController {
 
     var resultItems = [ItemViewModel]()
     
-     func getItems(symbol: String) {
+    func getItems(symbol: String) {
       
         guard let url = URL(string: "https://itunes.apple.com/search?term="+symbol) else {return}
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -23,12 +23,10 @@ class ItunesFetcher: UIViewController {
             do {
                 let jsonResponse = try JSONSerialization.jsonObject(with:
                     dataResponse, options: []) as! [String: Any]
-                guard let jsonArray = jsonResponse["results"] as? [[String: Any]] else {
+                guard let resultsJsonArray = jsonResponse["results"] as? [[String: Any]] else {
                     return
                 }
-                
-                self.fetchItems(jsonArray)
-
+                self.fetchItems(resultsJsonArray)
             } catch let parsingError {
                 print("Error", parsingError)
             }
@@ -36,12 +34,12 @@ class ItunesFetcher: UIViewController {
         task.resume()
     }
     
-    
     private func fetchItems(_ results: [[String: Any]]){
-         for el in results {
-            let item = ItemViewModel(ItemModel(el))
-                if self.resultItems.count <= 100 {
-                    self.resultItems.append(item)
+         for item in results {
+            let itemViewModel = ItemViewModel(ItemModel(item))
+            itemViewModel.imageView.loadImage(urlString: ItemModel(item).image)
+            if self.resultItems.count <= 100 {
+                self.resultItems.append(itemViewModel)
             }
         }
      }

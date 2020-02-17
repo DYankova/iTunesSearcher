@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ItemViewModel.deleteItem():ItemViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "$0.url">
+            </PersistentString>
+            <PersistentString
+               value = "ItunesFetcher.sharedInstance.resultItems">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItemViewModel.previewLink.getter:ItemViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItemsListViewcontroller.collectionView(_:numberOfItemsInSection:):ItemsListViewcontroller.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSURL(string: &quot;http://verona-api.municipiumstaging.it/system/images/image/image/22/app_1920_1280_4.jpg&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "itunesFetcher.resultItems">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItemViewModel.init(_:):ItemViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "escapedURL">
+            </PersistentString>
+            <PersistentString
+               value = "URL(string: &quot;https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/a6/91/79/a691798e-3cb2-0e6a-02ed-49df04b59c61/source/30x30bb.jpg&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = " URL(string: &quot;https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/a6/91/79/a691798e-3cb2-0e6a-02ed-49df04b59c61/source/30x30bb.jpg&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "URL(string: &quot;https://stackoverflow.com/questions/48576329/ios-urlstring-not-working-always&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CustomImageView.loadImageUsingUrlString(urlString:):ItemViewModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DetailsViewController.setupViews():DetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textLabelMoreInfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailsViewController.init(nibName:bundle:):DetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ItunesFetcher.resultItems">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItunesFetcher.resultItems.getter:ItunesFetcher.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ItemsListViewcontroller.collectionView(_:didSelectItemAt:):ItemsListViewcontroller.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "detailsViewController.itemViewModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItemModel.init(_:):ItemModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dictionary[&quot;trackId&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItemCell.setupViews():ItemCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "item">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItunesFetcher.init(nibName:bundle:):ItunesFetcher.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ItemsListViewcontroller.search():ItemsListViewcontroller.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "unesFetcher.resultItems.count">
+            </PersistentString>
+            <PersistentString
+               value = "URL(string: &quot;google&quot;) ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItemViewModel.deleteItem(sender:):ItemViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sender.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItemViewModel.downloadImage(from:):ItemViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " URL(string: &quot;https://www.google.com&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItunesFetcher.fetchItems(_:):ItunesFetcher.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "resultItems">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ItunesFetcher.fetchItems(symbol:):ItunesFetcher.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "el.value ">
+            </PersistentString>
+            <PersistentString
+               value = "jsonArray">
+            </PersistentString>
+            <PersistentString
+               value = "el">
+            </PersistentString>
+            <PersistentString
+               value = "(valArray)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItunesFetcher.getAllResults():ItunesFetcher.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.resultItems">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailsViewController.delete(sender:):DetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "itunesFetcher">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailsViewController.viewDidLoad():DetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "itemViewModel.detailedText">
+            </PersistentString>
+            <PersistentString
+               value = "resultItems">
+            </PersistentString>
+            <PersistentString
+               value = "item.name">
+            </PersistentString>
+            <PersistentString
+               value = "itemViewModel.text">
+            </PersistentString>
+            <PersistentString
+               value = "item.imageView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
